@@ -1,0 +1,7 @@
+- hosts: "*"
+  become: yes
+  tasks:
+    - name: iobroker
+      iobroker:
+        update: yes
+        upgrade: 'yes'
