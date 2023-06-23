@@ -1,5 +1,7 @@
 - hosts: "*"
   become: yes
   tasks:
-    - name: iobroker
+    - name: Run iobroker update
       command: iobroker update
+    - name: Run iobroker upgrade
+      command: iobroker upgrade
